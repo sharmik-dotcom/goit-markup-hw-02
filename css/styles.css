@@ -126,10 +126,9 @@ body {
   color: var(--main-color);
 }
 
-/* устанавливает базовые(основные) шрифт + цвет + фон: для кнопок всего документа */
+/* устанавливает базовые(основные) шрифт + тип курсора: для кнопок всего документа */
 .button {
-  background-color: var(--second-bg-color);
-  border: none;
+  /* border: none; */
 
   font-family: inherit;
   font-weight: 500;
@@ -138,19 +137,23 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--second-text-color);
-
   cursor: pointer;
 }
 
-/* устанавливает фон + акцентный цвет: для кнопок документа, */
-/*                                     при ховере, фокусе для каждой кнопки-фильтр */
+/* устанавливает цвет + фон: для кнопки в Hero, при ховере, фокусе на кнопке-фильтр */
 .button.primary,
-/* .button.current, */
 .button.filter:hover,
 .button.filter:focus {
   background-color: var(--accent-color);
   color: var(--main-color);
+}
+
+/* устанавливает цвет + фон: для кнопки-фильтр, при ховере, фокусе на кнопке в Hero */
+.button.filter,
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--second-bg-color);
+  color: var(--second-text-color);
 }
 
 /* устанавливает шрифт + цвет: для всех заголовков h2 главной страницы */
