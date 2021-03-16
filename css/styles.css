@@ -169,7 +169,7 @@ body {
 /* устанавливает шрифт + цвет: для заголовков h3 секции Особенности главной страницы*/
 .feature .title {
   font-weight: 700;
-  font-size: 14px;
+  font-size:  inherit; /*14px;*/ 
   line-height: 1.14;
   text-transform: uppercase;
 
@@ -193,6 +193,10 @@ body {
 /* устанавливает цвет: для параграфов p секции Наша команда главной страницы*/
 .team .text {
   color: var(--first-text-color);
+}
+
+.team {
+  background-color: var(--second-bg-color);
 }
 
 /* устанавливает шрифт + цвет: для заголовков h2 секции Портфолио страницы Портфолио*/
